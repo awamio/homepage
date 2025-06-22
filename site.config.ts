@@ -3,14 +3,20 @@ interface SiteConfig {
   description: string;
   subtitle: string;
   identities: string[];
-  socials: {
+  projects: {
     name: string;
-    icon: string;
+    description: string;
+    icon?: string;
     link: string;
   }[];
   skills: {
     name: string;
     icon: string;
+  }[];
+  socials: {
+    name: string;
+    icon: string;
+    link: string;
   }[];
 }
 
@@ -19,21 +25,24 @@ const config: SiteConfig = {
   description: "Mio's Homepage",
   subtitle: "白驹过隙 忽然而已",
   identities: ["学生", "ACGN爱好者"],
-  socials: [
+  projects: [
     {
-      name: "Blog",
-      icon: "line-md:edit-full-twotone",
-      link: "/",
+      name: "Mio's Homepage",
+      description:
+        "个人主页，使用 Next.js 和 Tailwind CSS 构建和 Tailwind CSS 构建和 Tailwind CSS 构建和 Tailwind CSS 构建",
+      icon: "https://avatars.githubusercontent.com/u/113767212",
+      link: "https://avatars.githubusercontent.com/u/113767212",
     },
     {
-      name: "Email",
-      icon: "line-md:email-alt-twotone",
-      link: "mailto:pzjawa@qq.com",
+      name: "Mio's Homepage",
+      description: "个人主页，使用 Next.js 和 Tailwind CSS 构建",
+      icon: "https://avatars.githubusercontent.com/u/113767212",
+      link: "https://avatars.githubusercontent.com/u/113767212",
     },
     {
-      name: "GitHub",
-      icon: "line-md:github-twotone",
-      link: "https://github.com/pzjawa",
+      name: "Mio's Homepage",
+      description: "个人主页，使用 Next.js 和 Tailwind CSS 构建",
+      link: "https://avatars.githubusercontent.com/u/113767212",
     },
   ],
   skills: [
@@ -56,6 +65,23 @@ const config: SiteConfig = {
     {
       name: "TailwindCSS",
       icon: "/skills/TailwindCSS.svg",
+    },
+  ],
+  socials: [
+    {
+      name: "Blog",
+      icon: "line-md:edit-full-twotone",
+      link: "/",
+    },
+    {
+      name: "Email",
+      icon: "line-md:email-alt-twotone",
+      link: "mailto:pzjawa@qq.com",
+    },
+    {
+      name: "GitHub",
+      icon: "line-md:github-twotone",
+      link: "https://github.com/pzjawa",
     },
   ],
 };

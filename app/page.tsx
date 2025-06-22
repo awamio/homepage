@@ -29,7 +29,7 @@ export default async function Home() {
             {config.socials.map((social) => (
               <a
                 key={social.name}
-                className="grid size-fit grid-flow-col place-content-center gap-1 rounded-lg border-2 border-transparent bg-sky-200/50 px-2 py-1 shadow-lg shadow-black/15 transition-all hover:border-black/10 hover:bg-sky-300/50"
+                className="grid size-fit grid-flow-col place-content-center gap-1 rounded-lg border-2 border-transparent bg-sky-200/50 px-2 py-1 shadow-lg shadow-black/10 transition-all hover:bg-sky-200/75 hover:shadow-black/15"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={social.name}
@@ -44,7 +44,7 @@ export default async function Home() {
       </div>
       <div className="grid place-content-center gap-10 md:place-content-start">
         <section className="animate-fade-in-up grid gap-3">
-          <h2 className="size-fit rounded-lg bg-sky-100 px-3 py-1 text-center text-xl text-slate-500 decoration-2 underline-offset-3 hover:text-sky-500">
+          <h2 className="size-fit rounded-lg bg-sky-100 px-3 py-1 text-center text-xl text-slate-500 decoration-2 underline-offset-3 hover:text-slate-600">
             About
           </h2>
           <div className="text-xl text-gray-500">
@@ -58,7 +58,35 @@ export default async function Home() {
           <p className="text-stroke text-5xl font-bold">{config.subtitle}</p>
         </section>
         <section className="animate-fade-in-up grid gap-5">
-          <h2 className="size-fit rounded-lg bg-sky-100 px-3 py-1 text-center text-xl text-slate-500 decoration-2 underline-offset-3 hover:text-sky-500">
+          <h2 className="size-fit rounded-lg bg-sky-100 px-3 py-1 text-center text-xl text-slate-500 decoration-2 underline-offset-3 hover:text-slate-600">
+            Projects
+          </h2>
+          <div className="grid w-175 grid-cols-2 gap-5">
+            {config.projects.map((project) => (
+              <a
+                href={project.link}
+                key={project.name}
+                className="relative min-h-25 w-85 overflow-hidden rounded-lg border border-transparent bg-sky-100 p-2 hover:border hover:border-gray-400/50 hover:bg-sky-200"
+              >
+                <h3 className="text-base font-bold text-slate-800">
+                  {project.name}
+                </h3>
+                <p className="text-sm text-gray-700">{project.description}</p>
+                {project.icon && (
+                  <Image
+                    src={project.icon}
+                    alt={project.name}
+                    width={80}
+                    height={80}
+                    className="absolute -top-2 -right-2 rounded-full opacity-25 select-none"
+                  />
+                )}
+              </a>
+            ))}
+          </div>
+        </section>
+        <section className="animate-fade-in-up grid gap-5">
+          <h2 className="size-fit rounded-lg bg-sky-100 px-3 py-1 text-center text-xl text-slate-500 decoration-2 underline-offset-3 hover:text-slate-600">
             Skills
           </h2>
           <Skills />

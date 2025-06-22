@@ -46,10 +46,16 @@ const Skills: React.FC = () => {
   }, [speed]);
 
   const renderIcon = (skill: SkillItem, key: string) => (
-    <div key={key} className="grid place-content-center">
+    <div key={key} className="group grid place-content-center">
       <div className="grid place-content-center rounded-4xl transition-all duration-300">
         <div className="relative">
-          <Image src={skill.icon} alt={skill.name} width={100} height={100} />
+          <Image
+            src={skill.icon}
+            alt={skill.name}
+            width={100}
+            height={100}
+            className="transition-transform duration-300 group-hover:scale-110"
+          />
         </div>
       </div>
     </div>
@@ -57,7 +63,7 @@ const Skills: React.FC = () => {
 
   return (
     <div
-      className="relative w-180 overflow-hidden rounded-lg bg-sky-200 py-10"
+      className="relative w-180 overflow-hidden rounded-lg bg-sky-200 py-10 select-none"
       ref={containerRef}
     >
       <div ref={contentRef} className="grid auto-cols-max grid-flow-col gap-5">
