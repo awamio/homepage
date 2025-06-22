@@ -7,7 +7,7 @@ import Image from "next/image";
 
 export default async function Home() {
   return (
-    <main className="grid w-screen place-content-center gap-30">
+    <main className="grid place-content-center gap-30">
       <div className="mx-auto mt-[25vh] grid grid-cols-1 place-content-end gap-x-30 gap-y-15 md:grid-cols-2">
         <figure className="animate-rotate mx-auto aspect-square size-70">
           <Image
