@@ -7,9 +7,9 @@ import Image from "next/image";
 
 export default async function Home() {
   return (
-    <main className="grid place-content-center gap-30 px-2">
+    <main className="grid place-content-center gap-30">
       <div className="mx-auto mt-[25vh] grid grid-cols-1 place-content-end gap-x-30 gap-y-15 md:grid-cols-2">
-        <figure className="animate-rotate mx-auto aspect-square size-70">
+        <figure className="animate-rotate mx-auto aspect-square size-60 md:size-70">
           <Image
             className="outline-avatar h-full w-full -rotate-5 rounded-2xl outline-5 -outline-offset-1 select-none"
             src={avatar}
@@ -25,7 +25,7 @@ export default async function Home() {
               {config.author}
             </span>
           </h1>
-          <div className="mt-5 grid grid-flow-col gap-3 select-none">
+          <div className="mt-5 grid grid-cols-3 gap-3 select-none">
             {config.socials.map((social) => (
               <a
                 key={social.name}
@@ -47,7 +47,7 @@ export default async function Home() {
           <h2 className="size-fit rounded-lg bg-sky-100 px-3 py-1 text-center text-xl text-slate-500 decoration-2 underline-offset-3 hover:text-slate-600">
             About
           </h2>
-          <div className="text-xl text-gray-500">
+          <div className="md:text-xl text-lg text-gray-500">
             {config.identities.map((identity, idx) => (
               <span key={identity}>
                 {identity}
@@ -55,13 +55,13 @@ export default async function Home() {
               </span>
             ))}
           </div>
-          <p className="text-stroke text-5xl font-bold">{config.subtitle}</p>
+          <p className="text-stroke md:text-5xl text-4xl font-bold">{config.subtitle}</p>
         </section>
         <section className="animate-fade-in-up grid gap-5">
           <h2 className="size-fit rounded-lg bg-sky-100 px-3 py-1 text-center text-xl text-slate-500 decoration-2 underline-offset-3 hover:text-slate-600">
             Projects
           </h2>
-          <div className="grid md:w-175 grid-cols-1 md:grid-cols-2 gap-5">
+          <div className="grid grid-cols-1 gap-5 md:w-175 md:grid-cols-2">
             {config.projects.map((project) => (
               <a
                 href={project.link}

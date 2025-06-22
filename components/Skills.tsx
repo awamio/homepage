@@ -63,7 +63,7 @@ const Skills: React.FC = () => {
 
   return (
     <div
-      className="relative md:w-180 w-80 overflow-hidden rounded-lg bg-sky-200 py-10 select-none"
+      className="relative w-85 overflow-hidden rounded-lg bg-sky-200 py-10 select-none md:w-180"
       ref={containerRef}
     >
       <div ref={contentRef} className="grid auto-cols-max grid-flow-col gap-5">
