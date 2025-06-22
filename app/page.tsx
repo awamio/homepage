@@ -61,7 +61,7 @@ export default async function Home() {
           <h2 className="size-fit rounded-lg bg-sky-100 px-3 py-1 text-center text-xl text-slate-500 decoration-2 underline-offset-3 hover:text-slate-600">
             Projects
           </h2>
-          <div className="grid w-175 grid-cols-2 gap-5">
+          <div className="grid md:w-175 grid-cols-1 md:grid-cols-2 gap-5">
             {config.projects.map((project) => (
               <a
                 href={project.link}
