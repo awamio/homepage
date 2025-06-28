@@ -8,7 +8,7 @@ import "@/app/globals.css";
 const misans = localFont({
   src: [
     {
-      path: "../fonts/MiSansVF.ttf",
+      path: "../fonts/MiSansVF.woff2",
       weight: "100 900",
       style: "normal",
     },
