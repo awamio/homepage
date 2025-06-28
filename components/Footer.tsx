@@ -11,14 +11,11 @@ export default function Footer() {
       : startYear.toString();
 
   return (
-    <footer className="animate-fade-in-up mb-5 grid auto-cols-min grid-flow-col place-content-center gap-x-5">
+    <footer className="animate-fade-in-up mb-5 grid auto-cols-min grid-flow-col place-content-center gap-x-3">
       <time dateTime={currentYear.toString()} className="grid auto-cols-max">
         &copy; {copyrightText}
       </time>
-      <span>
-        Powered&nbsp;by&nbsp;
-        <span className="text-author font-bold">{config.author}</span>
-      </span>
+      <span className="text-author font-bold">{config.author}</span>
     </footer>
   );
 }

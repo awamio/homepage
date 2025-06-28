@@ -66,7 +66,7 @@ export default async function Home() {
               <a
                 href={project.link}
                 key={project.name}
-                className="relative min-h-25 w-85 overflow-hidden rounded-lg border border-transparent bg-sky-100 p-2 hover:border hover:border-gray-400/50 hover:bg-sky-200"
+                className="relative min-h-25 w-80 md:w-85 overflow-hidden rounded-lg border border-transparent bg-sky-100 p-2 hover:border hover:border-gray-400/50 hover:bg-sky-200"
               >
                 <h3 className="text-base font-bold text-slate-800">
                   {project.name}
