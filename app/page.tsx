@@ -47,7 +47,7 @@ export default async function Home() {
           <h2 className="size-fit rounded-lg bg-sky-100 px-3 py-1 text-center text-xl text-slate-500 decoration-2 underline-offset-3 hover:text-slate-600">
             About
           </h2>
-          <div className="md:text-xl text-lg text-gray-500">
+          <div className="text-lg text-gray-500 md:text-xl">
             {config.identities.map((identity, idx) => (
               <span key={identity}>
                 {identity}
@@ -55,7 +55,9 @@ export default async function Home() {
               </span>
             ))}
           </div>
-          <p className="text-stroke md:text-5xl text-4xl font-bold">{config.subtitle}</p>
+          <p className="text-stroke text-4xl font-bold md:text-5xl">
+            {config.subtitle}
+          </p>
         </section>
         <section className="animate-fade-in-up grid gap-5">
           <h2 className="size-fit rounded-lg bg-sky-100 px-3 py-1 text-center text-xl text-slate-500 decoration-2 underline-offset-3 hover:text-slate-600">
@@ -66,7 +68,7 @@ export default async function Home() {
               <a
                 href={project.link}
                 key={project.name}
-                className="relative min-h-25 w-80 md:w-85 overflow-hidden rounded-lg border border-transparent bg-sky-100 p-2 hover:border hover:border-gray-400/50 hover:bg-sky-200"
+                className="relative min-h-25 w-85 overflow-hidden rounded-lg border border-transparent bg-sky-100 p-2 hover:border hover:border-gray-400/50 hover:bg-sky-200"
               >
                 <h3 className="text-base font-bold text-slate-800">
                   {project.name}
