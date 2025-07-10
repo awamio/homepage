@@ -6,7 +6,7 @@ const ConsoleLog = () => {
   useEffect(() => {
     const ascll = [
       `Designed by awamio`,
-      `https://github.com/pzjawa/homepage`,
+      `https://github.com/awamio/homepage`,
       `
        █████╗ ██╗    ██╗ █████╗ ███╗   ███╗██╗ ██████╗ 
       ██╔══██╗██║    ██║██╔══██╗████╗ ████║██║██╔═══██╗
