@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useEffect, useRef } from "react";
-import config from "@/site.config";
+import config from "@/config/site.config";
 import Image from "next/image";
 
 const Skills: React.FC = () => {

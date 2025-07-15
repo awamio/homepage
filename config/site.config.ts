@@ -1,26 +1,4 @@
-interface SiteConfig {
-  author: string;
-  description: string;
-  subtitle: string;
-  identities: string[];
-  projects: {
-    name: string;
-    description: string;
-    icon?: string;
-    link: string;
-  }[];
-  skills: {
-    name: string;
-    icon: string;
-  }[];
-  socials: {
-    name: string;
-    icon: string;
-    link: string;
-  }[];
-}
-
-const config: SiteConfig = {
+export default {
   author: "Mio",
   description: "Mio's Homepage",
   subtitle: "白驹过隙 忽然而已",
@@ -72,6 +50,4 @@ const config: SiteConfig = {
       link: "https://github.com/pzjawa",
     },
   ],
-};
-
-export default config;
+} as const;

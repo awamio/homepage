@@ -1,9 +1,9 @@
 "use client";
 
 import { useEffect, useState, useRef, useLayoutEffect } from "react";
+import config from "@/config/site.config";
 import { useTheme } from "next-themes";
 import { Icon } from "@iconify/react";
-import config from "@/site.config";
 import gsap from "gsap";
 
 type ThemeOption = {

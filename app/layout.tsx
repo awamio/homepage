@@ -2,10 +2,10 @@ import ConsoleLog from "@/components/ConsoleLog";
 import Animations from "@/components/Animations";
 import ScrollTop from "@/components/ScrollTop";
 import { ThemeProvider } from "next-themes";
+import config from "@/config/site.config";
 import Footer from "@/components/Footer";
 import localFont from "next/font/local";
 import type { Metadata } from "next";
-import config from "@/site.config";
 import "@/app/globals.css";
 
 const misans = localFont({

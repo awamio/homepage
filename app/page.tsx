@@ -1,7 +1,7 @@
+import config from "@/config/site.config";
 import Skills from "@/components/Skills";
 import avatar from "@/app/avatar.png";
 import { Icon } from "@iconify/react";
-import config from "@/site.config";
 import Image from "next/image";
 
 export default async function Home() {
